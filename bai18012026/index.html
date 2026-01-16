@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .deal-card img {
+            max-height: 120px;
+            object-fit: contain;
+        }
+        footer {
+            background: #fff;
+            padding: 40px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">Store</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" href=>Xuyên Không</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Trọng Sinh</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Cổ Đại</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Hiện Đại</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Điền Văn</a></li>
+            </ul>
+
+            <div class="d-flex">
+                <a href="#" class="nav-link text-white">Login</a>
+                <a href="#" class="nav-link text-warning fw-bold">Nạp VIP</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- ===== DEAL SECTION ===== -->
+<div class="container my-5">
+    <div class="row g-4">
+
+        <!-- BLACK FRIDAY -->
+        <div class="col-md-4">
+            <div class="card deal-card border-danger">
+                <div class="card-header bg-danger text-white text-center fw-bold">
+                    BLACK FRIDAY DEAL
+                </div>
+                <div class="card-body text-center">
+                    <img src="images/img1.jpg" class="img-fluid mb-3">
+                    <p class="mb-0">Buy 50 mobiles and get a gift card</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- HOT DEAL -->
+        <div class="col-md-4">
+            <div class="card deal-card border-primary">
+                <div class="card-header bg-primary text-white text-center fw-bold">
+                    HOT DEAL
+                </div>
+                <div class="card-body text-center">
+                    <img src="images/img2.jpg" class="img-fluid mb-3">
+                    <p class="mb-0">Discount up to 30%</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- NEW PRODUCT -->
+        <div class="col-md-4">
+            <div class="card deal-card border-success">
+                <div class="card-header bg-success text-white text-center fw-bold">
+                    NEW PRODUCT
+                </div>
+                <div class="card-body text-center">
+                    <img src="images/img3.jpg" class="img-fluid mb-3">
+                    <p class="mb-0">Latest arrivals</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <div class="container text-center">
+        <p class="fw-semibold mb-4">Online Store Copyright</p>
+
+        <form class="d-flex justify-content-center gap-2">
+            <span class="align-self-center">Get deals:</span>
+            <input type="email" class="form-control w-25" placeholder="Email của bạn">
+            <button class="btn btn-danger">Sign Up</button>
+        </form>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
